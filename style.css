@@ -1,0 +1,104 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.password-container {
+    background-color: pink;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+
+.input-container {
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#len {
+    border: solid 2px black;
+    border-radius: 10px;
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#len::-webkit-outer-spin-button,
+#len::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.input::placeholder {
+    letter-spacing: normal;
+}
+
+.fa-copy {
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.fa-copy:hover {
+    opacity: 0.7;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5);
+    background-color: green;
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.alert-container {
+    position: fixed;
+    width: 300px;
+    height: 50px;
+    background-color: lightgreen;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.4s;
+    padding-left: 10px;
+}
+
+.active.alert-container {
+    right: -310px;
+}
